@@ -1,0 +1,5 @@
+{
+  "name": "Kids Resume",
+  "description": "一份可打印的A4幼升小简历网页，支持上传照片及使用AI(Nano Banana 2)生成补充图片。",
+  "requestFramePermissions": []
+}

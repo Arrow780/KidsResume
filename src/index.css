@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+:root {
+  --color-bg: #fbfcf8;
+  --color-primary: #4a5d23;
+  --color-secondary: #cfdc28;
+  --color-secondary-light: #f4f7d4;
+  --color-accent1: #00aca7;
+  --color-accent1-light: #e0f2f1;
+  --color-accent2: #ecb85c;
+  --color-accent2-light: #fef3c7;
+  --color-accent3: #f3bbaf;
+  --color-border: #e2ebb3;
+  --radius-box: 0.125rem;
+  --border-width: 1px;
+  --font-heading: "Noto Serif SC", serif;
+}
+
+[data-theme="playful"] {
+  --color-bg: #fff9f0;
+  --color-primary: #ff6b6b;
+  --color-secondary: #feca57;
+  --color-secondary-light: #fff3d6;
+  --color-accent1: #48dbfb;
+  --color-accent1-light: #e0f7fa;
+  --color-accent2: #1dd1a1;
+  --color-accent2-light: #e8f8f5;
+  --color-accent3: #ff9ff3;
+  --color-border: #ffc048;
+  --radius-box: 1rem;
+  --border-width: 2px;
+  --font-heading: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+[data-theme="minimalist"] {
+  --color-bg: #ffffff;
+  --color-primary: #111827;
+  --color-secondary: #e5e7eb;
+  --color-secondary-light: #f9fafb;
+  --color-accent1: #4b5563;
+  --color-accent1-light: #f3f4f6;
+  --color-accent2: #6b7280;
+  --color-accent2-light: #f9fafb;
+  --color-accent3: #9ca3af;
+  --color-border: #e5e7eb;
+  --radius-box: 0px;
+  --border-width: 1px;
+  --font-heading: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Noto Serif SC", serif;
+  --font-theme-heading: var(--font-heading);
+  
+  --color-theme-bg: var(--color-bg);
+  --color-theme-primary: var(--color-primary);
+  --color-theme-secondary: var(--color-secondary);
+  --color-theme-secondary-light: var(--color-secondary-light);
+  --color-theme-accent1: var(--color-accent1);
+  --color-theme-accent1-light: var(--color-accent1-light);
+  --color-theme-accent2: var(--color-accent2);
+  --color-theme-accent2-light: var(--color-accent2-light);
+  --color-theme-accent3: var(--color-accent3);
+  --color-theme-border: var(--color-border);
+  
+  --radius-theme: var(--radius-box);
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  body {
+    margin: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    background-color: white;
+  }
+}
